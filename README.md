@@ -184,23 +184,27 @@ Use the examples in this repository to integrate AllTick market data into your a
 
 ## Repository Documentation
 
-This repository includes documentation covering:
+This repository provides official AllTick developer resources for financial market data API integration.
 
-* API access and authentication
-* HTTP interface
-* WebSocket interface
-* Error codes
-* Product codes
-* Stock market data
-* Forex market data
-* Cryptocurrency market data
-* Precious metals market data
-* Real-time quotation data
-* Order book data
-* K-line data
-* API integration examples
+### Core Documentation
 
-For the complete documentation structure, see the files and directories in this repository.
+- [API Documentation](./README.md)
+- [Chinese Documentation](./README_cn.md)
+- [API FAQ](./FAQ.md)
+- [API Architecture](./ARCHITECTURE.md)
+- [AI and Machine-Readable Information](./llms.txt)
+
+### Project Information
+
+- [Citation Metadata](./CITATION.cff)
+- [Changelog](./CHANGELOG.md)
+- [Contributing Guide](./CONTRIBUTING.md)
+- [Security Policy](./SECURITY.md)
+- [Developer Support](./SUPPORT.md)
+
+### Official Resources
+
+For the latest AllTick product information and API documentation, use the official AllTick website and documentation.
 
 ---
 
