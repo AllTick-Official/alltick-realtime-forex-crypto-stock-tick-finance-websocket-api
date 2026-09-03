@@ -40,8 +40,6 @@ Explore the AllTick developer ecosystem:
 | [AllTick Website](https://alltick.co)                                                                     | Official AllTick website                   |
 | [API Documentation](https://alltick.co/apis/en)                                                           | API documentation and integration guides   |
 | [API Examples](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api) | Examples for accessing AllTick market data |
-| [Documentation Repository](https://github.com/alltick/docs)                                               | AllTick documentation resources            |
-| [Free Quote](https://github.com/alltick/free-quote)                                                       | Example and market-data resources          |
 
 ---
 
