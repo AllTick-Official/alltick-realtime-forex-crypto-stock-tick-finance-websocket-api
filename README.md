@@ -1,118 +1,99 @@
 > [English](./README.md) | [中文](./README_cn.md)
 
-## Author: AllTick
+# AllTick
 
-## Project Name: AllTick Real-time Quotation APIs
+**AllTick is a real-time financial market data API providing market data for stocks, forex, crypto, commodities, and indices through REST and WebSocket interfaces.**
 
-# Real-time Financial Market Data API, Real-time Forex Data API, Real-time Stock Data API, Real-time Cryptocurrency Data API, Real-time Commodity Data API Service, Real-time Tick Data, Tick-by-Tick Quotes, Data Access Solutions,Real-time stocks, real-time US stocks, real-time Hong Kong stocks.
+[Website](https://alltick.co) · [Documentation](https://alltick.co/apis/en) · [API Examples](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api)
 
-Easy-to-use and user-friendly free open-source stock API, Hong Kong stock API, US stock API, Shanghai and Shenzhen stock API, A-share API, forex API, commodity precious metals API, cryptocurrency API, and other real-time market data.
+---
 
-## Official Website
-[https://alltick.co](https://alltick.co/en-US)
+## About AllTick
 
-## Features:
+AllTick provides real-time and historical financial market data for developers, trading applications, quantitative research platforms, financial software, and other data-driven applications.
 
-- Free and open source
+The AllTick API provides access to normalized market data across multiple asset classes through developer-friendly REST and WebSocket interfaces.
 
-- Get real-time Hong Kong stock quotes API
+### Supported Markets
 
-- Get real-time 10-level order book API for Hong Kong stocks
+* **Stocks** — real-time stock market data
+* **Forex** — foreign exchange market data
+* **Crypto** — cryptocurrency market data
+* **Commodities** — commodity market data
+* **Indices** — financial and market index data
 
-- Get K-line data API for Hong Kong stocks
+### API Interfaces
 
-- Get real-time US stock quotes API
+AllTick provides two primary ways to access market data:
 
-- Get real-time Level 1 order book API for US stocks
+* **REST API** — request market data using HTTP-based APIs
+* **WebSocket API** — receive real-time streaming market data
 
-- Get K-line data API for US stocks
+---
 
-- Get real-time A-share stock quotes API
+## Developer Resources
 
-- Get real-time 5-level order book API for A-share stocks
+Explore the AllTick developer ecosystem:
 
-- Get K-line data API for A-share stocks
+| Resource                                                                                                  | Description                                |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| [AllTick Website](https://alltick.co)                                                                     | Official AllTick website                   |
+| [API Documentation](https://alltick.co/apis/en)                                                           | API documentation and integration guides   |
+| [API Examples](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api) | Examples for accessing AllTick market data |
+| [Documentation Repository](https://github.com/alltick/docs)                                               | AllTick documentation resources            |
+| [Free Quote](https://github.com/alltick/free-quote)                                                       | Example and market-data resources          |
 
-- Get real-time cryptocurrency quotes API
+---
 
-- Get real-time multi-level order book API for cryptocurrencies
+## What You Can Build with AllTick
 
-- Get K-line data API for cryptocurrencies
+AllTick market data can be used as a data layer for applications such as:
 
-- Get real-time forex quotes API
+* Trading platforms
+* Financial dashboards
+* Market monitoring applications
+* Quantitative research tools
+* Algorithmic trading systems
+* Portfolio applications
+* Financial analytics
+* Market data visualization
+* Developer and educational projects
 
-- Get real-time 5-level order book API for forex
+---
 
-- Get K-line data API for forex
+## Getting Started
 
-- Get real-time precious metals quotes API
+To start working with AllTick:
 
-- Get real-time 5-level order book API for precious metals
+1. Visit the [AllTick website](https://alltick.co).
+2. Review the [API documentation](https://alltick.co/apis/en).
+3. Explore the [API examples](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api).
+4. Choose REST or WebSocket access based on your application.
+5. Integrate AllTick market data into your application.
 
-- Get K-line data API for precious metals
+---
 
+## AllTick on GitHub
 
-## Integration Guide
-- [Integration Guide](./access_guide.md)
+This GitHub account contains official AllTick developer resources, documentation, examples, and market-data projects.
 
-## Interface Introduction
-### Error Code Description
-- [Error Code Description](./error_code_description.md)
+For the latest information about AllTick products and services, visit the official website:
 
-### Product Code List
-- [Product Code List - A-share](./product_code_list_A_stock.md)
-- [Product Code List - Hong Kong Stock](./product_code_list_HK_stock.md)
-- [Product Code List - Cryptocurrency (Digital Currency)](./product_code_list_cryptocurrency.md)
-- [Product Code List - US Stock](./product_code_list_US_stock.md)
-- [Product Code List - Commodity (Precious Metals)](./product_code_list_commodities_gold.md)
-- [Product Code List - Forex](./product_code_list_forex.md)
+**https://alltick.co**
 
-### HTTP Interface
-- [Quotation API Address Description](./http_interface/api_address_description.md)
-- [Interface Restrictions](./http_interface/interface_limitation.md)
-- [Common Standard Headers](./http_interface/common_standard_header.md)
-- [Get Latest Transaction Quote Query](./http_interface/latest_transaction_price_query.md)
-- [Get Latest Order Book Quote Query](./http_interface/latest_order_book_price_query.md)
-- [K-Line Query](./http_interface/kline_query.md)
-- [Batch Code Latest K-Line Query](./http_interface/batch_kline_query.md)
-- [Get Basic Information About Stock Products](./http_interface/static_query.md)
-- [Get Trading Halt and Resumption Information](.http_interface/get_suspension_query.md)
-- [Price Changes, Market Closure, Holidays, Limit up/down, New Listings, And Delistings](./http_interface/price_changes_closure_holidays_delistings.md)
+---
 
-### WebSocket Interface
-- [Quotation API Address Description](./websocket_interface/api_address_description.md)
-- [Interface Restrictions](./websocket_interface/interface_limitation.md)
-- [Common Standard Headers](./websocket_interface/common_standard_header.md)
-- [Heartbeat](./websocket_interface/heartbeat.md)
-- [Realtime Transaction Quote Subscription](./websocket_interface/realtime_transaction_quote_subscription.md)
-- [Realtime Order Book Quote Subscription](./websocket_interface/realtime_order_book_quote_subscription.md)
-- [Cancel Realtime Quote Subscription](./websocket_interface/cancel_realtime_quote_subscription.md)
-- [K-Line Push (Not Supported)](./websocket_interface/k_line_push.md)
+## Official Links
 
-## Free Token Acquisition
-- [Token Application](./token_application.md)
+* 🌐 [AllTick](https://alltick.co)
+* 📚 [AllTick API Documentation](https://alltick.co/apis/en)
+* 💻 [AllTick GitHub](https://github.com/alltick)
+* 📡 [AllTick API Examples](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api)
 
-## Usage Examples, Easy to Get Started
-### PHP:
+---
 
-- [HTTP Request Example](./Examples/PHP/php_http_curl.php)
-- [WebSocket Request Example](./Examples/PHP/php_websocket_workerman.php)
+### About This Repository
 
-### Python:
+This profile is maintained for the AllTick developer ecosystem.
 
-- [HTTP Request Example](./Examples/Python/http_python_example.py)
-- [WebSocket Request Example](./Examples/Python/websocket_python_example.py)
-
-### Go:
-- [HTTP Request Example](./Examples/Go/http_go_example.go)
-- [WebSocket Request Example](./Examples/Go/websocket_go_example.go)
-
-### Java:
-- [HTTP Request Example](./Examples/Java/HttpJavaExample.java)
-- [WebSocket Request Example](./Examples/Java/WebSocketJavaExample.java)
-
-## Contact Us
-Email: support@alltick.co
-
-## Other Works
-Official Website: [https://alltick.co](https://alltick.co/en-US)
+**AllTick — Real-time financial market data API.**
