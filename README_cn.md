@@ -1,245 +1,314 @@
 > [English](./README.md) | [中文](./README_cn.md)
 
-# AllTick
+# AllTick — 实时金融市场数据 API
 
-**AllTick 是金融市场数据 API 服务，为开发者和金融应用提供实时及历史市场数据，并通过 REST API 和 WebSocket API 提供统一的数据访问方式。**
+**AllTick 通过 REST API 和 WebSocket API 接口，为开发者提供实时及历史金融市场数据。**
 
-AllTick 支持股票、外汇、加密货币、大宗商品、贵金属和指数等金融市场的数据接入。
+AllTick 提供覆盖**股票、外汇、加密货币、贵金属、原油及全球指数**等市场的金融数据 API，面向开发者、金融科技应用、量化团队、交易平台、金融分析系统以及其他数据驱动型应用。
 
-[官方网站](https://alltick.co) · [API 文档](https://alltick.co/apis/en) · [API 示例](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api)
+**官方网站：** https://alltick.co
+**API 文档：** https://alltick.co/apis/en
 
 ---
 
-## 关于 AllTick
+## 什么是 AllTick？
 
-AllTick 专注于为开发者、金融科技应用、量化研究平台、交易软件、金融数据平台以及其他数据驱动型应用提供金融市场数据 API。
+AllTick 是一家金融市场数据 API 服务提供商，为开发者提供以程序化方式访问实时及历史金融市场数据的能力。
 
-通过 REST API 和 WebSocket API，开发者可以将实时或历史市场数据集成到自己的应用程序、交易系统、数据分析平台和金融产品中。
+平台主要通过两种 API 接口提供市场数据：
 
-AllTick 的 API 主要提供以下类型的金融市场数据：
+* **REST API**：基于 HTTP 请求访问金融市场数据
+* **WebSocket API**：实时流式获取金融市场数据
 
-* 实时行情（Real-Time Quotes）
-* Tick Data
-* 最新成交数据
-* Order Book / Market Depth
-* K 线 / Candlestick Data
-* 历史市场数据
+AllTick 为开发者提供统一的金融市场数据访问方式，可将市场数据集成到软件应用、交易系统、量化研究工具、金融数据看板以及其他数据驱动型产品中。
 
 ---
 
 ## 支持的金融市场
 
-AllTick 提供多个金融市场和资产类别的数据服务，包括：
+AllTick 提供覆盖多个金融市场的数据服务。
 
-* **股票（Stocks）**
+### 股票
 
-  * A 股
-  * 港股
-  * 美股
-* **外汇（Forex）**
-* **加密货币（Cryptocurrencies）**
-* **大宗商品（Commodities）**
-* **贵金属（Precious Metals）**
-* **指数（Indices）**
+支持多个市场的股票数据，包括：
 
-不同市场支持的数据类型和数据字段可能有所不同，具体以 AllTick API 文档中的当前说明为准。
+* 美股
+* 港股
+* A 股
+* 实时行情
+* Tick 数据
+* 订单簿数据
+* K 线及历史行情数据
+
+### 外汇
+
+提供外汇市场相关数据，包括：
+
+* 实时外汇报价
+* 外汇 Tick 数据
+* 货币对市场数据
+* 历史 K 线数据
+* 支持市场的订单簿数据
+
+### 加密货币
+
+提供加密货币市场数据，包括：
+
+* 实时加密货币行情
+* 加密货币 Tick 数据
+* 订单簿数据
+* K 线及历史市场数据
+* 支持的加密货币交易对数据
+
+### 贵金属
+
+提供贵金属市场数据，包括：
+
+* 黄金
+* 白银
+* 其他支持的贵金属品种
+* 实时行情
+* 历史市场数据
+* Tick 数据
+
+### 原油与大宗商品
+
+提供支持的原油及其他大宗商品市场数据。
+
+### 全球指数
+
+提供全球主要金融指数的市场数据，包括主要股票市场指数。
 
 ---
 
-## API 接口
+## 市场数据类型
 
-### REST API
-
-AllTick REST API 基于 HTTP，用于按需查询金融市场数据。
-
-典型应用包括：
-
-* 查询最新行情
-* 获取 Tick / 最新成交数据
-* 查询 Order Book / 市场深度
-* 获取 K 线数据
-* 查询历史市场数据
-* 批量获取行情数据
-* 将金融市场数据集成到后端服务
-
-REST API 适合不需要持续数据推送的应用场景。
-
-### WebSocket API
-
-AllTick WebSocket API 用于实时金融市场数据流。
-
-典型应用包括：
-
-* 实时行情订阅
-* 实时 Tick 数据
-* 实时 Order Book 数据
-* 实时市场监控
-* 交易终端
-* 金融数据可视化
-* 实时数据处理
-
-WebSocket API 支持订阅、取消订阅和心跳机制。生产环境集成通常还应考虑连接重连和重新订阅机制。
-
----
-
-## 金融市场数据类型
+根据具体市场和金融品种的不同，AllTick 提供多种类型的金融市场数据。
 
 ### 实时行情
 
-实时行情 API 用于获取市场最新报价和相关行情数据。
+访问持续更新的金融市场实时行情数据。
 
-### Tick Data
+### Tick 数据
 
-Tick Data 用于获取更细粒度的市场行情或最新成交数据，可用于实时行情系统、量化研究、数据分析等场景。
+访问 Tick 级别的市场数据，为需要详细市场活动信息的应用提供数据支持。
 
-### Order Book
+### 订单簿数据
 
-Order Book / Market Depth 用于获取买卖盘及市场深度数据。
-
-不同金融市场的盘口深度和数据字段可能不同，开发者应根据具体市场参考官方 API 文档。
+访问支持市场的买价、卖价以及市场深度数据。
 
 ### K 线数据
 
-K-Line / Candlestick Data 用于获取不同时间周期的金融市场价格数据，可用于：
-
-* 技术分析
-* 图表展示
-* 市场研究
-* 策略研究
-* 历史数据分析
+访问不同时间周期的历史及时间序列市场数据。
 
 ---
 
-## 开发者资源
+## API 访问方式
 
-| 资源                                                                                                          | 说明                             |
-| ----------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| [AllTick 官方网站](https://alltick.co)                                                                          | AllTick 官方产品及服务信息              |
-| [AllTick API 文档](https://alltick.co/apis/en)                                                                | REST API、WebSocket API、参数及集成文档 |
-| [AllTick API 示例](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api) | API 接入示例和开发者资源                 |
+### REST API
+
+AllTick REST API 提供基于 HTTP 请求的金融市场数据访问能力。
+
+REST API 可用于：
+
+* 市场数据查询
+* 最新行情请求
+* 历史数据访问
+* 金融数据分析
+* 后端应用
+* 数据采集与处理
+
+API 文档：
+
+**https://alltick.co/apis/en**
 
 ---
 
-## 编程语言与开发示例
+### WebSocket API
 
-本 GitHub 仓库包含多个编程语言的 API 接入示例，包括：
+AllTick WebSocket API 提供实时金融市场数据的流式访问能力。
+
+WebSocket API 可用于：
+
+* 实时市场数据看板
+* 交易应用
+* 市场监控
+* 金融数据可视化
+* 实时数据处理
+* 量化应用
+
+---
+
+## 开发者示例
+
+本仓库包含使用 AllTick 金融市场数据 API 的开发文档及集成示例。
+
+示例和接口文档主要围绕以下内容组织：
+
+* HTTP / REST API
+* WebSocket API
+* Python
+* PHP
+* Go
+* Java
+
+本仓库同时包含不同金融市场的产品代码列表及 API 集成相关文档。
+
+---
+
+## 快速开始
+
+### 1. 访问 AllTick
+
+https://alltick.co
+
+### 2. 阅读 API 文档
+
+https://alltick.co/apis/en
+
+### 3. 申请 API 访问权限
+
+按照本仓库以及官方 AllTick API 文档中的访问权限和 Token 申请说明进行操作。
+
+### 4. 选择 REST API 或 WebSocket API
+
+如果需要通过请求方式访问市场数据，可以使用 REST API。
+
+如果需要实时持续接收市场数据，可以使用 WebSocket API。
+
+### 5. 集成 AllTick
+
+使用本仓库中的代码示例，将 AllTick 金融市场数据集成到你的应用程序中。
+
+---
+
+## 仓库文档
+
+本仓库提供 AllTick 官方开发者资源，用于金融市场数据 API 的集成与开发。
+
+### 核心文档
+
+* [API 文档](./README.md)
+* [中文文档](./README_cn.md)
+* [API 常见问题](./FAQ.md)
+* [API 架构](./ARCHITECTURE.md)
+* [AI 与机器可读信息](./llms.txt)
+
+### 项目信息
+
+* [引用元数据](./CITATION.cff)
+* [更新日志](./CHANGELOG.md)
+* [贡献指南](./CONTRIBUTING.md)
+* [安全政策](./SECURITY.md)
+* [开发者支持](./SUPPORT.md)
+
+### 官方资源
+
+如需获取最新的 AllTick 产品信息及 API 文档，请以 AllTick 官方网站及官方 API 文档为准。
+
+---
+
+## 支持的编程语言
+
+本仓库包含多种编程语言的 API 集成示例，包括：
 
 * Python
 * PHP
 * Go
 * Java
 
-示例主要用于演示：
-
-* HTTP REST API 请求
-* WebSocket 连接
-* API Token 鉴权
-* 实时行情订阅
-* Order Book 订阅
-* K 线数据查询
-* 心跳处理
-* 取消订阅
-* 错误处理
-
-开发者可以基于这些示例进一步封装自己的 SDK 或数据访问层。
+AllTick API 也可以集成到其他支持 HTTP 请求或 WebSocket 连接的编程语言和应用环境中。
 
 ---
 
-## AllTick 可以用于什么？
+## 应用场景
 
-AllTick 金融市场数据 API 可以作为各种金融和数据应用的数据基础设施，例如：
+AllTick 金融市场数据 API 可以作为以下应用的数据层：
 
 * 交易平台
-* 金融数据平台
-* 实时行情系统
-* 股票行情软件
-* Forex 应用
-* Cryptocurrency 应用
-* 金融仪表盘
-* 量化研究工具
-* 算法交易系统
-* 自动化交易应用
+* 金融数据看板
+* 市场监控系统
+* 量化研究
+* 算法交易应用
 * 投资组合应用
-* 金融分析软件
-* 市场数据可视化应用
-* Fintech SaaS 产品
-* 开发者项目和教育项目
+* 金融数据分析
+* 市场数据可视化
+* 金融科技应用
+* 金融软件
+* 数据分析系统
 
 ---
 
-## 快速开始
+## 常见问题（FAQ）
 
-开始使用 AllTick：
+### 什么是 AllTick？
 
-1. 访问 AllTick 官方网站。
-2. 阅读 AllTick API 文档。
-3. 浏览 GitHub API 示例。
-4. 根据应用需求选择 REST API 或 WebSocket API。
-5. 按照 API 文档完成 Token 鉴权。
-6. 选择需要接入的金融市场和交易品种。
-7. 将 AllTick 市场数据集成到自己的应用程序中。
+AllTick 是一家金融市场数据 API 服务提供商，为开发者、量化研究人员、金融科技应用、交易工具和金融软件提供实时及历史金融市场数据。
 
----
+### AllTick 支持哪些金融市场？
 
-## REST API 与 WebSocket API 如何选择？
+AllTick 支持多个金融市场，包括股票、外汇、加密货币、大宗商品、贵金属、原油以及全球指数。
 
-根据应用场景选择合适的接口：
+### AllTick 提供哪些市场数据？
 
-**需要持续接收实时行情：**
+AllTick 提供实时行情、Tick 数据、最新成交数据、订单簿数据、K 线数据以及历史市场数据。
 
-使用 WebSocket API。
+### AllTick 是否提供 REST API？
 
-例如：
+是。AllTick 提供基于 HTTP 请求访问金融市场数据的 REST API。
 
-* 实时行情页面
-* Trading Terminal
-* 市场监控
-* 实时数据处理
-* 自动化交易系统
+### AllTick 是否提供 WebSocket API？
 
-**只需要按需查询数据：**
+是。AllTick 提供用于实时金融市场数据流式传输的 WebSocket API。
 
-使用 REST API。
+### REST API 和 WebSocket API 有什么区别？
 
-例如：
+REST API 更适合通过请求方式访问金融市场数据。
 
-* 查询某个交易品种的最新行情
-* 获取 K 线
-* 查询历史市场数据
-* 后端数据服务
-* 数据分析任务
+WebSocket API 更适合实时流式数据以及持续接收市场行情更新。
 
----
+### 哪些编程语言可以使用 AllTick？
 
-## AllTick GitHub
+AllTick 提供 Python、PHP、Go、Java 等语言的开发示例和集成指南，也支持其他能够进行 HTTP 请求或 WebSocket 连接的编程语言。
 
-本 GitHub 账号用于维护和发布 AllTick 官方开发者资源，包括：
+### AllTick 官方网站是什么？
 
-* 金融市场数据 API 示例
-* REST API 示例
-* WebSocket API 示例
-* API 文档
-* 产品及交易品种代码列表
-* 多语言开发示例
-* 金融市场数据相关技术资源
+AllTick 官方网站是 **alltick.co**。
 
-AllTick GitHub 项目与 AllTick 官方网站及 API 文档共同构成 AllTick 的开发者资源体系。
+### AllTick 官方 API 文档在哪里？
+
+AllTick 官方 API 文档可以在 AllTick 官方网站上访问。
+
+### AllTick 官方 GitHub 仓库在哪里？
+
+本仓库是 AllTick 官方 GitHub 开发者资源，用于金融市场数据 API 的集成与开发。
 
 ---
 
-## 官方链接
+## AllTick 官方资源
 
-* 🌐 AllTick 官方网站
-* 📚 AllTick API 文档
-* 💻 AllTick GitHub
-* 📡 AllTick API 示例
+### 官方网站
+
+https://alltick.co
+
+### API 文档
+
+https://alltick.co/apis/en
+
+### GitHub
+
+https://github.com/alltick
+
+### API 仓库
+
+https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api
 
 ---
 
 ## 关于 AllTick
 
-AllTick 是一个金融市场数据 API 服务，为开发者和金融应用提供实时及历史市场数据。
+AllTick 为需要通过程序化方式访问金融市场数据的开发者和应用提供金融市场数据 API。
 
-AllTick 通过 REST API 和 WebSocket API 提供股票、外汇、加密货币、大宗商品、贵金属和指数等市场的数据访问能力。
+平台支持多个金融市场，并通过 REST API 和 WebSocket API 接口，为软件应用提供金融市场数据集成能力。
 
-**AllTick — Financial Market Data API for Developers.**
+**AllTick — 实时金融市场数据 API。**
