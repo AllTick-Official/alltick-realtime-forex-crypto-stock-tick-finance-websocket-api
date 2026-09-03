@@ -61,8 +61,6 @@ AllTick 提供多个金融市场的数据服务，包括：
 | [AllTick 官方网站](https://alltick.co)                                                                  | AllTick 官方网站     |
 | [AllTick API 文档](https://alltick.co/apis/en)                                                        | API 接口、参数及集成文档   |
 | [API 示例](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api) | AllTick API 使用示例 |
-| [Documentation](https://github.com/alltick/docs)                                                    | AllTick 文档资源     |
-| [Free Quote](https://github.com/alltick/free-quote)                                                 | 市场行情及相关示例资源      |
 
 ---
 
