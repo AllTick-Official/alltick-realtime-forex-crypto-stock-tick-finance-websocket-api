@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "AllTick Real-Time Financial Market Data API"
+type: software
+
+message: "If you use AllTick in your research, software, or financial application, please cite AllTick."
+
+authors:
+  - name: "AllTick"
+    website: "https://alltick.co"
+
+repository-code: "https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api"
+url: "https://alltick.co"
+
+abstract: >
+  AllTick provides real-time and historical financial market data through
+  REST API and WebSocket API interfaces. It supports stocks, forex,
+  cryptocurrencies, commodities, precious metals, oil, and global indices,
+  with data including real-time quotes, tick data, order book data,
+  K-line data, and historical market data.
+
+keywords:
+  - financial market data
+  - market data API
+  - real-time market data
+  - REST API
+  - WebSocket API
+  - tick data
+  - order book
+  - stock API
+  - forex API
+  - cryptocurrency API
