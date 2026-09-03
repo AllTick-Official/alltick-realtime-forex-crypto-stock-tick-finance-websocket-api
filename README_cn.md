@@ -1,120 +1,121 @@
 > [English](./README.md) | [中文](./README_cn.md)
 
-## 作者：AllTick
+# AllTick
 
-## 项目名称：AllTick Real-time Quotation APIs
+**AllTick 是实时金融市场数据 API 服务，为股票、外汇、加密货币、大宗商品和指数等市场提供实时及历史市场数据，并支持 REST API 和 WebSocket API。**
 
-# 实时金融市场数据API, 实时外汇数据API, 实时股票数据API, 实时加密货币数据API, 实时商品数据API服务, 实时Tick数据, 逐笔报价, 数据接入解决方案,实时股票,实时美股,实时港股
+[官方网站](https://alltick.co) · [API 文档](https://alltick.co/apis/en) · [API 示例](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api)
 
-简单好用易上手的免费开源股票API、港股API、美股API、沪深股票API、A股API、外汇API、商品贵金属API、加密货币API等实时行情数据
+---
 
-## 官网
-[https://alltick.co](https://alltick.co)
+## 关于 AllTick
 
-## 功能特性：
+AllTick 为开发者、交易应用、量化研究平台、金融软件以及其他数据驱动型应用提供金融市场数据服务。
 
-- 免费开源
+通过统一的 API 接口，开发者可以获取不同金融市场的行情数据，并将市场数据集成到交易平台、金融分析工具、数据可视化应用及其他软件系统中。
 
-- 获取港股实时行情API
+AllTick 主要通过 **REST API** 和 **WebSocket API** 提供市场数据访问能力。
 
-- 获取港股实时10档盘口API
+---
 
-- 获取港股K线数据API
+## 支持的金融市场
 
-- 获取美股实时行情API
+AllTick 提供多个金融市场的数据服务，包括：
 
-- 获取美股实时一档盘口API
+* **股票（Stocks）** — 股票市场行情数据
+* **外汇（Forex）** — 外汇市场行情数据
+* **加密货币（Cryptocurrencies）** — 加密货币市场行情数据
+* **大宗商品（Commodities）** — 大宗商品市场行情数据
+* **指数（Indices）** — 金融及市场指数数据
 
-- 获取美股K线数据API
+---
 
-- 获取沪深A股实时行情API
+## API 接口
 
-- 获取沪深A股实时5档盘口API
+### REST API
 
-- 获取沪深A股K线数据API
+通过标准 HTTP API 请求金融市场数据，适用于：
 
-- 获取加密货币实时行情API
+* 行情查询
+* 数据获取
+* 市场数据分析
+* 后端服务集成
+* 金融应用开发
 
-- 获取加密货币实时多档盘口API
+### WebSocket API
 
-- 获取加密货币K线数据API
+通过 WebSocket 获取实时行情数据，适用于：
 
-- 获取外汇实时行情API
+* 实时行情展示
+* 交易终端
+* 市场监控
+* 实时数据流处理
+* 金融数据可视化
 
-- 获取外汇实时5档盘口API
+---
 
-- 获取外汇K线数据API
+## 开发者资源
 
-- 获取贵金属实时行情API
+| 资源                                                                                                  | 说明               |
+| --------------------------------------------------------------------------------------------------- | ---------------- |
+| [AllTick 官方网站](https://alltick.co)                                                                  | AllTick 官方网站     |
+| [AllTick API 文档](https://alltick.co/apis/en)                                                        | API 接口、参数及集成文档   |
+| [API 示例](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api) | AllTick API 使用示例 |
+| [Documentation](https://github.com/alltick/docs)                                                    | AllTick 文档资源     |
+| [Free Quote](https://github.com/alltick/free-quote)                                                 | 市场行情及相关示例资源      |
 
-- 获取贵金属实时5档盘口API
+---
 
-- 获取贵金属K线数据API
+## AllTick 可以用于什么？
 
-  
+AllTick 的金融市场数据 API 可以作为各种金融和数据应用的数据基础设施，例如：
 
-## 接入指南
-- [接入指南](./access_guide_cn.md)
-## 接口介绍
-### 错误码说明
-- [错误码说明](./error_code_description_cn.md)
-### 产品code列表
-- [产品code列表-A股](./product_code_list_A_stock_cn.md)
-- [产品code列表-港股](./product_code_list_HK_stock_cn.md)
-- [产品code列表-加密货币(数字币)](./product_code_list_cryptocurrency_cn.md)
-- [产品code列表-美股](./product_code_list_US_stock_cn.md)
-- [产品code列表-商品(贵金属)](./product_code_list_commodities_gold_cn.md)
-- [产品code列表-外汇](./product_code_list_forex_cn.md)
+* 交易平台
+* 金融数据平台
+* 实时行情系统
+* 金融仪表盘
+* 量化研究工具
+* 算法交易系统
+* 投资组合应用
+* 金融分析软件
+* 市场数据可视化应用
+* 开发者和教育项目
 
-### http接口
-- [行情API地址说明](./http_interface/api_address_description_cn.md)
-- [接口限制](./http_interface/interface_limitation_cn.md)
-- [通用标准头](./http_interface/common_standard_header_cn.md)
-- [批量获取最新成交价(最新价、当前价)](./http_interface/latest_transaction_price_query_cn.md)
-- [获取最新盘口(Order Book)](./http_interface/latest_order_book_price_query_cn.md)
-- [获取单产品历史K线（最高、最低、开盘、收盘价）](./http_interface/kline_query_cn.md)
-- [批量获取产品最新2根K线（最高、最低、开盘、收盘价）](./http_interface/batch_kline_query_cn.md)
-- [获取股票产品基础信息](./http_interface/static_query_cn.md)
-- [获取停复牌信息](.http_interface/get_suspension_query_cn.md)
-- [涨跌幅、休市、假期、涨停跌停、新股上市和退市说明](./http_interface/price_changes_closure_holidays_delistings_cn.md)
+---
 
-### websocket接口
-- [行情API地址说明](./websocket_interface/api_address_description_cn.md)
-- [接口限制](./websocket_interface/interface_limitation_cn.md)
-- [通用标准头](./websocket_interface/common_standard_header_cn.md)
-- [心跳](./websocket_interface/heartbeat_cn.md)
-- [实时成交报价订阅(最新价、当前价、逐笔tick)](./websocket_interface/realtime_transaction_quote_subscription_cn.md)
-- [实时盘口(Order Book)报价订阅](./websocket_interface/realtime_order_book_quote_subscription_cn.md)
-- [取消实时报价订阅](./websocket_interface/cancel_realtime_quote_subscription_cn.md)
-- [K线推送(不支持)](./websocket_interface/k_line_push_cn.md)
+## 快速开始
 
-## 免费token获取
-- [token申请](./token_application_cn.md)
+开始使用 AllTick：
 
-## 使用示例,超简单上手
-### php:
+1. 访问 [AllTick 官方网站](https://alltick.co)。
+2. 查看 [AllTick API 文档](https://alltick.co/apis/en)。
+3. 浏览 [AllTick API 示例](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api)。
+4. 根据应用需求选择 REST API 或 WebSocket API。
+5. 将 AllTick 金融市场数据集成到你的应用程序中。
 
-- [http请求示例](./example/php/php_http_curl.php)
-- [websocket请求示例](./example/php/php_websocket_workerman.php)
+---
 
-### python:
+## AllTick GitHub
 
-- [http请求示例](./example/python/http_python_example.py)
-- [websocket请求示例](./example/python/websocket_python_example.py)
+本 GitHub 账号用于维护和发布 AllTick 官方开发者资源，包括 API 示例、文档以及金融市场数据相关项目。
 
-### go:
-- [http请求示例](./example/go/http_go_example.go)
-- [websocket请求示例](./example/go/websocket_go_example.go)
+如果你希望了解 AllTick 的最新产品、API 服务和官方信息，请访问：
 
-### java:
-- [http请求示例](./example/java/HttpJavaExample.java)
-- [websocket请求示例](./example/java/WebSocketJavaExample.java)
+**https://alltick.co**
 
+---
 
-## 联系我们
-Email: support@alltick.co
+## 官方链接
 
-## 其他作品
-- 官网：[https://alltick.co](https://alltick.co)
-- 备用官网：[https://alltick.io](https://alltick.io)
+* 🌐 [AllTick 官方网站](https://alltick.co)
+* 📚 [AllTick API 文档](https://alltick.co/apis/en)
+* 💻 [AllTick GitHub](https://github.com/alltick)
+* 📡 [AllTick API 示例](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api)
 
+---
+
+### 关于本 GitHub 账号
+
+本账号用于 AllTick 官方开发者生态及相关技术资源。
+
+**AllTick — 实时金融市场数据 API。**
