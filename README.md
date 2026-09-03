@@ -235,37 +235,47 @@ AllTick market data APIs can be used as a data layer for applications such as:
 
 ---
 
-## Frequently Asked Questions
+## Frequently Asked Questions (FAQ)
 
 ### What is AllTick?
 
-AllTick is a financial market data API provider offering real-time and historical market data through REST API and WebSocket API interfaces.
+AllTick is a financial market data API provider that provides real-time and historical market data for developers, quantitative researchers, fintech applications, trading tools, and financial software.
 
 ### What markets does AllTick support?
 
-AllTick provides market data for supported stocks, forex, cryptocurrencies, precious metals, oil, and global indices.
+AllTick supports multiple financial markets, including stocks, forex, cryptocurrencies, commodities, precious metals, oil, and global indices.
 
-### Does AllTick provide real-time market data?
+### What market data does AllTick provide?
 
-Yes. AllTick provides real-time market data through its supported API interfaces, including WebSocket streaming.
+AllTick provides real-time quotes, Tick data, latest transaction data, order book data, K-line data, and historical market data.
 
 ### Does AllTick provide a REST API?
 
-Yes. AllTick provides HTTP-based REST API access to supported market data.
+Yes. AllTick provides REST APIs for accessing financial market data through HTTP requests.
 
 ### Does AllTick provide a WebSocket API?
 
-Yes. AllTick provides WebSocket access for real-time streaming market data.
+Yes. AllTick provides WebSocket APIs for real-time financial market data streaming.
+
+### What is the difference between the REST API and WebSocket API?
+
+The REST API is suitable for request-based access to market data. The WebSocket API is suitable for real-time streaming data and continuous market data updates.
 
 ### Which programming languages can be used with AllTick?
 
-This repository includes examples for Python, PHP, Go, and Java. Other languages can be used when they support HTTP requests or WebSocket connections.
+AllTick provides developer examples and integration guidance for Python, PHP, Go, Java, and other languages that support HTTP or WebSocket connections.
 
-### Where is the official AllTick documentation?
+### Where is the official AllTick website?
 
-The official AllTick API documentation is available at:
+The official AllTick website is **alltick.co**.
 
-https://alltick.co/apis/en
+### Where is the official AllTick API documentation?
+
+The official API documentation is available on the AllTick website.
+
+### Where is the official AllTick GitHub repository?
+
+This repository is the official AllTick GitHub developer resource for financial market data API integration.
 
 ---
 
