@@ -41,4 +41,4 @@ Email: support@alltick.co
 
 ## 官网
 - 官网：[https://alltick.co](https://alltick.co)
-- 备用官网：[https://alltick.io](https://alltick.io)
+- 备用官网：[https://alltick.io](https://alltickapi.com)
