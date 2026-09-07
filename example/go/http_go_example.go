@@ -22,7 +22,7 @@ func http_example() {
 		股票api地址:
 		https://quote.alltick.co/quote-stock-b-api
 	*/
-	url := "https://quote.alltick.io/quote-stock-b-api/kline"
+	url := "https://quote.alltick.co/quote-stock-b-api/kline"
 	log.Println("请求内容：", url)
 
 	req, err := http.NewRequest("GET", url, nil)
