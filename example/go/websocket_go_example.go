@@ -30,7 +30,7 @@ type Request struct {
 	Token Application: https://alltick.co
 	Replace "testtoken" in the URL below with your own token
 	API addresses for forex, cryptocurrencies, and precious metals:
-	wss://quote.alltick.io/quote-b-ws-api
+	wss://quote.alltick.co/quote-b-ws-api
 	Stock API address:
 	wss://quote.alltick.co/quote-stock-b-ws-api
 */
