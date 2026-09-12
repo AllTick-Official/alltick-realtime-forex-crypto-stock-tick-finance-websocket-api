@@ -299,7 +299,7 @@ https://github.com/alltick
 
 ### API Repository
 
-https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api
+https://github.com/alltick-official/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api
 
 ---
 
