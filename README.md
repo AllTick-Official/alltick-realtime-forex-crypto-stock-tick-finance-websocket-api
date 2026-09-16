@@ -133,6 +133,26 @@ Access historical and time-series market data across supported intervals.
 
 ## API Access
 
+## API Architecture
+
+```mermaid
+flowchart LR
+    A[Your Application]
+
+    A --> B[AllTick API]
+
+    B --> C[REST API]
+    B --> D[WebSocket API]
+
+    C --> E[Latest Quotes]
+    C --> F[Historical Data]
+    C --> G[K-Line Data]
+
+    D --> H[Real-Time Tick]
+    D --> I[Trade-by-Trade]
+    D --> J[Order Book Depth]
+```
+
 ### REST API
 
 The AllTick REST API provides HTTP-based access to market data.
