@@ -29,7 +29,13 @@ AllTick is designed to provide developers with a unified way to access financial
 
 AllTick is designed to provide developers with a unified way to access financial market data and integrate it into software applications, trading systems, quantitative research tools, financial dashboards, and other data-driven products.
 
-## Market Coverage
+---
+
+## Supported Markets
+
+AllTick provides market data across multiple financial markets.
+
+### Market Coverage
 
 ```mermaid
 flowchart TB
@@ -49,12 +55,6 @@ flowchart TB
     E --> E1[Gold]
     E --> E2[Silver]
 ```
-
----
-
-## Supported Markets
-
-AllTick provides market data across multiple financial markets.
 
 ### Stocks
 
@@ -133,7 +133,7 @@ Access historical and time-series market data across supported intervals.
 
 ## API Access
 
-## API Architecture
+### API Architecture
 
 ```mermaid
 flowchart LR
