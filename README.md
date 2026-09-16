@@ -27,6 +27,29 @@ The platform provides market data through two primary API interfaces:
 
 AllTick is designed to provide developers with a unified way to access financial market data and integrate it into software applications, trading systems, quantitative research tools, financial dashboards, and other data-driven products.
 
+AllTick is designed to provide developers with a unified way to access financial market data and integrate it into software applications, trading systems, quantitative research tools, financial dashboards, and other data-driven products.
+
+## Market Coverage
+
+```mermaid
+flowchart TB
+    A[AllTick Financial Market Data]
+
+    A --> B[Stocks]
+    A --> C[Forex]
+    A --> D[Cryptocurrency]
+    A --> E[Precious Metals]
+    A --> F[Oil & Commodities]
+    A --> G[Global Indices]
+
+    B --> B1[US Stocks]
+    B --> B2[Hong Kong Stocks]
+    B --> B3[A-Shares]
+
+    E --> E1[Gold]
+    E --> E2[Silver]
+```
+
 ---
 
 ## Supported Markets
