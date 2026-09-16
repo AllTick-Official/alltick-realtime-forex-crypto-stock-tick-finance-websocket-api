@@ -2,6 +2,11 @@
 
 # AllTick — Real-Time Financial Market Data API
 
+[![GitHub Stars](https://img.shields.io/github/stars/AllTick-Official/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api?style=flat-square)](https://github.com/AllTick-Official/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/AllTick-Official/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api?style=flat-square)](https://github.com/AllTick-Official/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/AllTick-Official/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api?style=flat-square)](https://github.com/AllTick-Official/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/issues)
+[![GitHub License](https://img.shields.io/github/license/AllTick-Official/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api?style=flat-square)](https://github.com/AllTick-Official/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api)
+
 **AllTick provides real-time and historical financial market data through REST API and WebSocket API interfaces.**
 
 AllTick provides market data for **stocks, forex, cryptocurrencies, precious metals, oil, and global indices**, with APIs designed for developers, fintech applications, quantitative teams, trading platforms, financial analytics, and other data-driven applications.
