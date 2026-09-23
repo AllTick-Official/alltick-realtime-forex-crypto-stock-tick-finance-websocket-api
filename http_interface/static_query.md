@@ -33,7 +33,7 @@ This interface only supports batch requests for basic information on US, HK, and
 ### **Request Example**
 
 When sending a query request, it must include the method name and token information. <br />An example of a request is as follows:
-<br />https://qquote.alltick.co/quote-stock-b-api/static_info?token=您的token&query=queryData
+<br />https://quote.alltick.co/quote-stock-b-api/static_info?token=您的token&query=queryData
 
 
 ### Request Parameters
