@@ -27,7 +27,7 @@ This interface only supports batch requests for basic information on US, HK, and
 ### **Interface Address**
 
 - **Base Path:** `/quote-stock-b-api/v1/stock-info`
-- **Full URL:** `https://quote.alltick.co/quote-stock-b-api/static-info`
+- **Full URL:** `https://quote.alltick.co/quote-stock-b-api/v1/stock-info`
 
 <br />
 

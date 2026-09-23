@@ -1,4 +1,4 @@
-> [English](./) | [中文](./)
+> [English](./common_standard_header.md) | [中文](./common_standard_header_cn.md)
 
 # 请求通用标准头介绍
 
