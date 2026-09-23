@@ -49,7 +49,7 @@
 {
   "trace": "c2a8a146-a647-4d6f-ac07-8c4805bf0b74",
   "data": {
-    "data_list": [
+    "symbol_list": [
       {
         "code": "700.HK",
         "kline_type": 1,
@@ -77,7 +77,7 @@
 | body                      | body   | object    | 是  | <br />                                                                                                                                                                            |
 | » trace                   | body   | string    | 是  | 追踪码，用来查询日志使用，请保证每次请求时唯一                                                                                                                                                           |
 | » data                    | body   | object    | 是  | <br />                                                                                                                                                                            |
-| »» data\_list             | body   | \[object] | 是  | <br />                                                                                                                                                                            |
+| »» symbol_list             | body   | \[object] | 是  | <br />                                                                                                                                                                            |
 | »»» code                  | body   | string    | 是  | 请查看code列表，选择你要查询的code:[点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)注意：code值大小写要与产品列表中的code保持一致 |
 | »»» kline\_type           | body   | integer   | 是  | k线类型1、1是1分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K）2、最短的k线只支持1分钟                                                       |
 | »»» kline\_timestamp\_end | body   | integer   | 是  | 从指定时间往前查询K线1、传0表示从当前最新的交易日往前查k线2、指定时间请传时间戳，传时间戳表示从该时间戳往前查k线3、只有外汇贵金属加密货币支持传时间戳，股票类的code不支持                                                                                        |
