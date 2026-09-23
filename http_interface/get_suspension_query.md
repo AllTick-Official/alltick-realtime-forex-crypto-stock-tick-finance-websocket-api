@@ -1,4 +1,4 @@
-> [English](./static_query.md) | [中文](./static_query_cn.md)
+> [English](./get_suspension_query.md) | [中文](./get_suspension_query_cn.md)
 
 ## GET Get Trading Halt and Resumption Information
 
