@@ -22,6 +22,13 @@
 - [产品code列表-商品(贵金属)](./product_code_list_commodities_gold_cn.md)
 - [产品code列表-外汇](./product_code_list_forex_cn.md)
 ### 第6步：请求具体接口获取你想要的数据
+#### rest接口
+- [批量获取最新成交价(最新价、当前价)](./http_interface/rest_latest_transaction_price_query_cn.md)
+- [获取最新盘口(Order Book)](./http_interface/rest_latest_order_book_price_query_cn.md)
+- [获取单个产品历史K线（最高、最低、开盘、收盘价）](./http_interface/rest_kline_query_cn.md)
+- [批量获取产品最新2根K线（最高、最低、开盘、收盘价）](./http_interface/rest_batch_kline_query_cn.md)
+- [获取股票产品基础信息](./http_interface/rest_static_query_cn.md)
+- [涨跌幅、休市、假期、涨停跌停、新股上市和退市说明](./http_interface/price_changes_closure_holidays_delistings_cn.md)
 #### http接口
 - [批量获取最新成交价(最新价、当前价)](./http_interface/latest_transaction_price_query_cn.md)
 - [获取最新盘口(Order Book)](./http_interface/latest_order_book_price_query_cn.md)
