@@ -1,4 +1,4 @@
-> [English](./rest_batch_kline_query.md) | [中文](./rest_batch_kline_query_cn.md)
+> [English](./batch_kline_query.md) | [中文](./batch_kline_query_cn.md)
 
 ## POST Query the latest 2 K lines of products in batches
 
