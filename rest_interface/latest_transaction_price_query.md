@@ -1,4 +1,4 @@
-> [English](./rest_latest_transaction_price_query.md) | [中文](./rest_latest_transaction_price_query_cn.md)
+> [English](./latest_transaction_price_query.md) | [中文](./latest_transaction_price_query_cn.md)
 
 ## GET Latest Trade Tick Query
 
