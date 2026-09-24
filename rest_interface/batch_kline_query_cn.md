@@ -1,4 +1,4 @@
-> [English](./rest_batch_kline_query.md) | [中文](./rest_batch_kline_query_cn.md)
+> [English](./batch_kline_query.md) | [中文](./batch_kline_query_cn.md)
 
 ## POST 批量查询产品最新2根K线（最高、最低、开盘、收盘价）
 
