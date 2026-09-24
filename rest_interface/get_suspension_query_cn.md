@@ -1,4 +1,4 @@
-> [English](./rest_get_suspension_query.md) | [中文](./rest_get_suspension_query_cn.md)
+> [English](./get_suspension_query.md) | [中文](./get_suspension_query_cn.md)
 
 ## GET 停复牌信息查询接口
 
