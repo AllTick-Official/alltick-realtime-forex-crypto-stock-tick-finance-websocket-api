@@ -1,4 +1,4 @@
-> [English](./rest_latest_order_book_price_query.md) | [中文](./rest_latest_order_book_price_query_cn.md)
+> [English](./latest_order_book_price_query.md) | [中文](./latest_order_book_price_query_cn.md)
 
 ## GET 最新盘口(Order Book)查询
 
