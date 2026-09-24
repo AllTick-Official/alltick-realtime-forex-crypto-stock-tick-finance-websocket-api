@@ -35,11 +35,11 @@
 
 #### REST Interface
 
-- [Get Latest Transaction Quote Query](./http_interface/rest_latest_transaction_price_query.md)
-- [Get Latest Order Book Quote Query](./http_interface/rest_latest_order_book_price_query.md)
-- [K-Line Query](./http_interface/rest_kline_query.md)
-- [POST Query the latest 2 K lines of products in batches](./http_interface/rest_batch_kline_query.md)
-- [Get basic information about stock products](./http_interface/rest_static_query.md)
+- [Get Latest Transaction Quote Query](./rest_interface/latest_transaction_price_query.md)
+- [Get Latest Order Book Quote Query](./rest_interface/latest_order_book_price_query.md)
+- [K-Line Query](./rest_interface/kline_query.md)
+- [POST Query the latest 2 K lines of products in batches](./rest_interface/batch_kline_query.md)
+- [Get basic information about stock products](./rest_interface/static_query.md)
 - [Price changes, Market closure, Holidays, Limit up/down, New listings, and Delistings](./http_interface/price_changes_closure_holidays_delistings.md)
   
 #### HTTP Interface
