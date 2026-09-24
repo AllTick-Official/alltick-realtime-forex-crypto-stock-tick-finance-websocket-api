@@ -1,4 +1,4 @@
-> [English](./rest_static_query.md) | [中文](./rest_static_query_cn.md)
+> [English](./static_query.md) | [中文](./static_query_cn.md)
 
 ## POST Product information query
 
