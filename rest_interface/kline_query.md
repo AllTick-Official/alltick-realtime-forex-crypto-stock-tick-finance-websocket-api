@@ -1,4 +1,4 @@
-> [English](./rest_kline_query.md) | [中文](./rest_kline_query_cn.md)
+> [English](./kline_query.md) | [中文](./kline_query_cn.md)
 
 ## GET K-Line Query
 
