@@ -1,8 +1,8 @@
 > [English](./latest_order_book_price_query.md) | [中文](./latest_order_book_price_query_cn.md)
 
-## GET Latest Depth Tick Query
+## POST Latest Depth Tick Query
 
-## GET /v1/depth
+## POST /v1/depth
 
 ### Interface Description
 
@@ -48,11 +48,11 @@ The following is the maximum market depth for each product type:
 | Name      | Position | Type   | Required | Description                                  |
 | --------- | -------- | ------ | -------- | -------------------------------------------- |
 | X-API-Key | header   | string | Yes      | Your token                                   |
-| query     | path    | string | Yes      | See explanation for query request parameters |
+| query     | body    | string | Yes      | See explanation for query request parameters |
 
 > Query Request Parameters
 
-Encode the following JSON into URL format and assign it to the `query` query string in the URL.
+Assign the following JSON to the body.
 
 ```json
 {
