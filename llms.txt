@@ -7,7 +7,7 @@ AllTick is a financial market data API provider offering real-time and historica
 Official brand: AllTick
 Official website: https://alltick.co
 Official API documentation: https://alltick.co/apis/en
-Official GitHub: https://github.com/alltick
+Official GitHub: https://github.com/AllTick-Official
 
 AllTick provides market data infrastructure for developers, quantitative researchers, fintech applications, trading tools, financial websites, SaaS products, and other applications that require structured financial market data.
 
