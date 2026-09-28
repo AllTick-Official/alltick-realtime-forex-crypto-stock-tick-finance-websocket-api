@@ -1,8 +1,8 @@
 > [English](./latest_transaction_price_query.md) | [中文](./latest_transaction_price_query_cn.md)
 
-## GET Latest Trade Tick Query
+## POST Latest Trade Tick Query
 
-## GET /v1/quote
+## POST /v1/quote
 
 ### Interface Description
 
@@ -41,11 +41,11 @@ This interface supports batch requests for the latest trade prices (latest tick 
 | Name      | Position | Type   | Required | Description                                       |
 | --------- | -------- | ------ | -------- | ------------------------------------------------- |
 | X-API-Key | header   | string | Yes      | Your token                                        |
-| query     | path     | string | Yes      | See explanation of query request parameters below |
+| query     | body     | string | Yes      | See explanation of query request parameters below |
 
 > Query Request Parameters
 
-The following JSON should be URL-encoded and assigned to the `query` query string in the URL.
+Assign the following JSON to the body.
 
 ```json
 {
