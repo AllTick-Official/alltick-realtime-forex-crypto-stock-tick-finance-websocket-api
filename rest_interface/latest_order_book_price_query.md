@@ -36,12 +36,12 @@ The following is the maximum market depth for each product type:
 **1、US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
 
 - **Base Path:** `/quote-stock-b-api/v1/depth`
-- **Full URL:** `https://quote.alltick.co/quote-stock-b-api/v1/depth/{query}`
+- **Full URL:** `https://quote.alltick.co/quote-stock-b-api/v1/depth`
 
 **2、Forex, Precious Metals, Cryptocurrencies, Commodities API Endpoints:**
 
 - **Base Path:** `/quote-b-api/v1/depth`
-- **Full URL:** `https://quote.alltick.co/quote-b-api/v1/depth/{query}`
+- **Full URL:** `https://quote.alltick.co/quote-b-api/v1/depth`
 
 ### Request Parameters
 
