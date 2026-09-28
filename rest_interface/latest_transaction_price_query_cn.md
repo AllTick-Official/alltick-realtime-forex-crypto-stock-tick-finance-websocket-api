@@ -1,8 +1,8 @@
 > [English](./latest_transaction_price_query.md) | [中文](./latest_transaction_price_query_cn.md)
 
-## GET 最新成交价批量查询（逐笔tick、最新价、当前价）
+## POST 最新成交价批量查询（逐笔tick、最新价、当前价）
 
-## GET /v1/quote
+## POST /v1/quote
 
 ### 接口说明
 
@@ -30,23 +30,23 @@
 #### 1、美股、港股、A股、大盘数据接口地址：
 
 - 基本路径: /quote-stock-b-api/v1/quote
-- 完整URL: <https://quote.alltick.co/quote-stock-b-api/v1/quote/{query}>
+- 完整URL: <https://quote.alltick.co/quote-stock-b-api/v1/quote>
 
 #### 2、外汇、贵金属、加密货币、原油、CFD指数、商品接口地址：
 
 - 基本路径: /quote-b-api/v1/quote
-- 完整URL: <https://quote.alltick.co/quote-b-api/v1/quote/{query}>
+- 完整URL: <https://quote.alltick.co/quote-b-api/v1/quote>
 
 ### 请求参数
 
 | 名称    | 位置     | 类型     | 必选 | 说明            |
 | ----- | ------ | ------ | -- | ------------- |
 | token | header | string | 是  | 您的token       |
-| query | path   | string | 是  | 查看query请求参数说明 |
+| query | body   | string | 是  | 查看query请求参数说明 |
 
 > query 请求参数
 
-将如下json进行UrlEncode编码，赋值到url的查询字符串的query里
+将如下json赋值到body里
 
 ```json
 {
